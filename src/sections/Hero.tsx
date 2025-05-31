@@ -1,6 +1,6 @@
 "use client";
 import { FC, useEffect, useRef } from "react";
-import heroImage from "@/assets/images/hero-image.jpg";
+import heroImage from "@/assets/images/hero-image.webp";
 import Image from "next/image";
 import Button from "@/components/Button";
 
