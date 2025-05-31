@@ -123,14 +123,14 @@ const Footer: FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <GithubIcon className="w-8 h-8 text-white hover:text-[#F4653C]" />
+                    <GithubIcon className="w-8 h-8 text-white hover:text-red-orange-500" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/machvca/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <LinkedinIcon className="w-8 h-8 text-white hover:text-[#F4653C]" />
+                    <LinkedinIcon className="w-8 h-8 text-white hover:text-red-orange-500" />
                   </a>
                 </div>
               </nav>

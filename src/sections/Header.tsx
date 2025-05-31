@@ -2,6 +2,7 @@
 import { FC, useEffect, useState } from "react";
 import Button from "@/components/Button";
 import { motion, useAnimate } from "motion/react";
+import Link from "next/link";
 
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
@@ -168,11 +169,11 @@ const Header: FC = () => {
         <div className="container !max-w-full">
           <div className="flex justify-between h-20 items-center">
             <div>
-              <a href="#">
+              <Link href="/">
                 <span className="text-xl font-bold uppercase text-white">
                   Jorge&nbsp; Machuca
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
