@@ -3,9 +3,9 @@ import { FC, useEffect } from "react";
 import Button from "@/components/Button";
 import useTextRevealAnimation from "@/hooks/useTextRevealAnimation";
 import { useInView } from "motion/react";
-import Image from "next/image";
-import gitLogo from "@/assets/images/gitlogo.png";
-import linkLogo from "@/assets/images/linklogo.png";
+import GithubIcon from "@/components/icons/GithubIcon";
+import LinkedinIcon from "@/components/icons/LinkedinIcon";
+
 
 const navItems = [
   {
@@ -117,30 +117,20 @@ const Footer: FC = () => {
                     </Button>
                   </a>
                 ))}
-                <div className="flex items-center justify-end -mr-6">
+                <div className="flex items-center justify-end gap-4">
                   <a
                     href="https://github.com/Machvca"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image
-                      src={gitLogo}
-                      width={40}
-                      height={50}
-                      alt="Github Icon"
-                    />
+                    <GithubIcon className="w-8 h-8 text-white hover:text-stone-400" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/machvca/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Image
-                      src={linkLogo}
-                      width={80}
-                      height={70}
-                      alt="Linkedin Icon"
-                    />
+                    <LinkedinIcon className="w-8 h-8 text-white hover:text-stone-400" />
                   </a>
                 </div>
               </nav>
