@@ -1,46 +1,55 @@
 import { FC } from "react";
-import image1 from "@/assets/images/project-1.jpg";
-import image2 from "@/assets/images/project-2.jpg";
-import image3 from "@/assets/images/project-3.jpg";
-import image4 from "@/assets/images/project-4.jpg";
-import image5 from "@/assets/images/project-5.jpg";
+import image1 from "@/assets/images/project-1.webp";
+import image2 from "@/assets/images/project-2.webp";
+import image3 from "@/assets/images/project-3.webp";
+// import image4 from "@/assets/images/project-4.jpg";
+// import image5 from "@/assets/images/project-5.jpg";
 import Image from "next/image";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const projects = [
   {
-    name: "Artisan Brew Co.",
+    name: "Patreon Clone",
     image: image1,
+    url: "https://patreon-youtube-build-puce.vercel.app/",
   },
   {
-    name: "Wavelength Studios",
+    name: "Tintin the Magician",
     image: image2,
+    url: "https://bastien-bonillados.vercel.app/en",
   },
   {
-    name: "Nova Fitness",
+    name: "Photography Portfolio",
     image: image3,
+    url: "https://jorgemachucaph.vercel.app/",
   },
-  {
-    name: "Urban Plates",
-    image: image4,
-  },
-  {
-    name: "Bloom Botanicals",
-    image: image5,
-  },
+  // {
+  //   name: "Urban Plates",
+  //   image: image4,
+  // },
+  // {
+  //   name: "Bloom Botanicals",
+  //   image: image5,
+  // },
 ];
 
 const Projects: FC = () => {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected works</h2>
+        <h2 className="text-4xl md:text-7xl lg:text-8xl">
+          Selected latest work
+        </h2>
+
         <div className="mt-10 md:mt-16 lg:mt-20">
-          {projects.map(({ name, image }) => (
+          {projects.map(({ name, image, url }) => (
             <a
-              href="#"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               key={name}
-              className="border-t last:border-b border-stone-400 border-dotted py-6  md:py-8 lg:py-10 flex flex-col relative group/project">
+              className="border-t last:border-b border-stone-400 border-dotted py-6  md:py-8 lg:py-10 flex flex-col relative group/project"
+            >
               <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-stone-300"></div>
               <div className="relative">
                 <div className="aspect-video md:hidden">
@@ -67,7 +76,6 @@ const Projects: FC = () => {
                   <div className="lg:group-hover/project:pr-8 transition-all duration-700">
                     <div className="size-6 overflow-hidden ">
                       <div className="h-6 w-12  flex group-hover/project:-translate-x-1/2 transition-transform duration-300">
-                    
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -111,3 +119,7 @@ const Projects: FC = () => {
 };
 
 export default Projects;
+
+
+
+// ya no estoy aqui cumbias rtebajadas para tiempos de guerra

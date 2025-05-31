@@ -1,41 +1,41 @@
 "use client";
 
 import { FC, useRef, useState } from "react";
-import image1 from "@/assets/images/testimonial-1.jpg";
-import image2 from "@/assets/images/testimonial-2.jpg";
-import image3 from "@/assets/images/testimonial-3.jpg";
+import image1 from "@/assets/images/testimonial-1.webp";
+import image2 from "@/assets/images/testimonial-2.webp";
+// import image3 from "@/assets/images/testimonial-3.jpg";
 import { useScroll, motion, useTransform, AnimatePresence } from "motion/react";
 import Testimonial from "@/components/Testimonials";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const testimonials = [
   {
-    name: "Moron n.1 Bonilla",
+    name: "Bastien Bonilla",
     company: "Revolut",
-    role: "Head of Sales",
+    role: "Sales team",
     quote:
-      "Machuca's expertise in both technical development and design created a beautiful, high-performing website.",
+      "I had a great experience working with Machuca. He built a clean, professional website to promote my magician services. The process was smooth, and the final result was exactly what I needed.",
     image: image1,
     imagePositionY: 0.2,
   },
   {
-    name: "Marcus Rodriguez",
-    company: "Craft Coffee Co.",
+    name: "Akbar Khan",
+    company: "Musician",
     role: "Founder",
     quote:
-      "Machuca transformed our boutique coffee brand with a website that perfectly balances aesthetics and functionality.",
+      "I'm really happy with the portfolio website Machuca created for me. It looks modern, works great on all devices, and showcases my work beautifully. The whole process was smooth and efficient.",
     image: image2,
     imagePositionY: 0.1,
   },
-  {
-    name: "Emily Watson",
-    company: "Studio Minimal",
-    role: "Creative Director",
-    quote:
-      "The collaborative process was amazing. Machuca brought lots of fresh perspectives and innovative solutions.",
-    image: image3,
-    imagePositionY: 0.55,
-  },
+  // {
+  //   name: "Emily Watson",
+  //   company: "Studio Minimal",
+  //   role: "Creative Director",
+  //   quote:
+  //     "The collaborative process was amazing. Machuca brought lots of fresh perspectives and innovative solutions.",
+  //   image: image3,
+  //   imagePositionY: 0.55,
+  // },
 ];
 
 const Testimonials: FC = () => {

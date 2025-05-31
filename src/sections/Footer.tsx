@@ -3,7 +3,9 @@ import { FC, useEffect } from "react";
 import Button from "@/components/Button";
 import useTextRevealAnimation from "@/hooks/useTextRevealAnimation";
 import { useInView } from "motion/react";
-
+import Image from "next/image";
+import gitLogo from "@/assets/images/gitlogo.png";
+import linkLogo from "@/assets/images/linklogo.png";
 
 const navItems = [
   {
@@ -38,17 +40,16 @@ const Footer: FC = () => {
     }
   }, [inView, entranceAnimation]);
 
-const handleClickNavItem = (e: React.MouseEvent<HTMLAnchorElement>) => {
-  e.preventDefault();
+  const handleClickNavItem = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
 
+    const url = new URL(e.currentTarget.href, window.location.href);
+    const hash = url.hash;
 
-  const url = new URL(e.currentTarget.href, window.location.href);
-  const hash = url.hash;
-
-  const target = document.querySelector(hash);
-  if (!target) return;
-  target.scrollIntoView({ behavior: "smooth" });
-};
+    const target = document.querySelector(hash);
+    if (!target) return;
+    target.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <footer className="bg-stone-900 text-white" id="contact">
@@ -116,6 +117,32 @@ const handleClickNavItem = (e: React.MouseEvent<HTMLAnchorElement>) => {
                     </Button>
                   </a>
                 ))}
+                <div className="flex items-center justify-end -mr-6">
+                  <a
+                    href="https://github.com/Machvca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={gitLogo}
+                      width={40}
+                      height={50}
+                      alt="Github Icon"
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/machvca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={linkLogo}
+                      width={80}
+                      height={70}
+                      alt="Linkedin Icon"
+                    />
+                  </a>
+                </div>
               </nav>
             </div>
           </div>

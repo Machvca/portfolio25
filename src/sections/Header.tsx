@@ -170,7 +170,7 @@ const Header: FC = () => {
             <div>
               <a href="/">
                 <span className="text-xl font-bold uppercase text-white">
-                  Jorge&nbsp; Machucaaaaaaaa
+                  Jorge&nbsp; Machuca
                 </span>
               </a>
             </div>
