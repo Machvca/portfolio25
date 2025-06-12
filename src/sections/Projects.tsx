@@ -2,7 +2,7 @@ import { FC } from "react";
 import image1 from "@/assets/images/project-1.webp";
 import image2 from "@/assets/images/project-2.webp";
 import image3 from "@/assets/images/project-3.webp";
-// import image4 from "@/assets/images/project-4.jpg";
+import image4 from "@/assets/images/project-4.webp";
 // import image5 from "@/assets/images/project-5.jpg";
 import Image from "next/image";
 
@@ -23,10 +23,11 @@ const projects = [
     image: image3,
     url: "https://jorgemachucaph.vercel.app/",
   },
-  // {
-  //   name: "Urban Plates",
-  //   image: image4,
-  // },
+  {
+    name: "Movie App",
+    image: image4,
+    url: "https://movie-app-git-main-jorgemachuca.vercel.app/",
+  },
   // {
   //   name: "Bloom Botanicals",
   //   image: image5,
